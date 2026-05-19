@@ -11,6 +11,11 @@ def filter_by_name(users, name):
     return [user for user in users if user["name"] == name]
 
 
+def filter_by_age(users, min_age):
+    """Filtere User-Liste nach Mindestalter."""
+    return [user for user in users if user["age"] >= min_age]
+
+
 if __name__ == "__main__":
-    result = filter_by_name(USERS, "Alice")
-    print(result)
+    print("Filter by name (Alice):", filter_by_name(USERS, "Alice"))
+    print("Filter by age (>=30):", filter_by_age(USERS, 30))
