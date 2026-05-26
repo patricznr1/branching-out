@@ -1,1 +1,10 @@
-def farewell(name):\n    return f"Goodbye, {name}!"\n\nif __name__ == "__main__":\n    print(farewell("World"))
+"""Farewell helper used by the Branching Out demo."""
+
+
+def farewell(name):
+    """Return a goodbye message addressed to ``name``."""
+    return f"Goodbye, {name}!"
+
+
+if __name__ == "__main__":
+    print(farewell("World"))
